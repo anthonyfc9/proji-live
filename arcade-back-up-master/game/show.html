@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>myArk||{{  name  }}</title>
+        <style>
+            body {
+                height: 95vh;
+                width: 100vw;
+                background-color: black;
+            }
+
+            div {
+                width: 600px;
+                height: 450px;
+                /* margin-right: auto; */
+                /* margin-left: auto; */
+                margin: 10vh auto auto;
+                margin-top: 10vh;
+            }
+
+
+            img{
+                height: 20vh;
+    width: auto;
+    position: absolute;
+    top: -15px;
+            }
+
+            .buttons {
+            -moz-animation: blink normal 2.5s infinite ease-in-out; /* Firefox */
+            -webkit-animation: blink normal 2.5s infinite ease-in-out; /* Webkit */
+            -ms-animation: blink normal 2.5s infinite ease-in-out; /* IE */
+            animation: blink normal 2.5s infinite ease-in-out; /* Opera and prob css3 final iteration */
+        }
+         
+        @-moz-keyframes blink {
+            0% {
+                opacity:1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        } 
+         
+        @-webkit-keyframes blink {
+            0% {
+                opacity:1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+        /* IE */
+        @-ms-keyframes blink {
+            0% {
+                opacity:1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        } 
+        /* Opera and prob css3 final iteration */
+        @keyframes blink {
+            0% {
+                opacity:1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        } 
+
+        @media(max-width:800px){
+
+       
+
+            img{
+                height: 30vh;
+    position: absolute;
+    top: -15px;
+    width: auto;
+            }
+        }
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <a href="/game">
+           <img src="./../../public/assets/backbutton.png" class='buttons'alt="backbutton">
+        </a>
+        <h3>{{ name }}</h3>
+
+        <div>
+            <iframe
+                src="{{  link  }}"
+                width="600px"
+                height="450px"
+                frameborder="no"
+                allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"
+                scrolling="no"></iframe>
+
+        </div>
+
+        <!-- <script src="public/particles.js"></script> <script
+        src="public/particleinit.js"></script> -->
+    </body>
+</html>

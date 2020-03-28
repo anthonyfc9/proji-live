@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>myArk||Games</title><link rel="stylesheet" href="public/style.css" type="text/css">
+
+    </head>
+    <body>
+
+            <div class="flexbox">
+
+        {{  #games  }}
+       <div class="gamebox">
+            <a href="/game/{{ id }}">
+                <img src="public/{{  imagelocation  }}" class="games">
+            </a>
+            <h3>{{ name }}</h3>
+
+        </div>
+        {{  /games}}
+
+
+    </div>
+
+
+        <!-- <script src="public/particles.js"></script> -->
+        <!-- <script src="public/particleinit.js"></script> -->
+    </body>
+</html>
